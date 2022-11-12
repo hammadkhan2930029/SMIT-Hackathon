@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="d-flex align-items-start sidbar">
+        <div class="nav flex-column nav-pills me-3 sidbar" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Add Student </button>
+
+
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Add Student
+                class</button>
+
+
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Attendence Mark</button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Manage Data</button>
+        </div>
+
+        <!-- ------admin------ -->
+
+
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+                tabindex="0">
+
+                <div class="admin2">
+                    <form type="submit">
+                        </h1>Admin Panel</h1>
+
+                        <div class="mainDiv">
+                            <div class="row2">
+                                <div class="one_2">
+                                    <label>
+                                        Name:
+                                    </label>
+                                    <input required placeholder="enter name" type="text" id="name">
+                                </div>
+                                <div class="one_2">
+                                    <label>
+                                        Father Name :
+                                    </label>
+                                    <input required placeholder="Father Name" type="text" id="FatherName">
+                                </div>
+                            </div>
+
+                            <div class="row2">
+                                <div class="one_2">
+                                    <label>
+                                        Roll Number :
+                                    </label>
+                                    <input required placeholder="Roll Number" type="text" id="rollNumber">
+                                </div>
+                                <div class="one_2">
+                                    <label>
+                                        Contact no :
+                                    </label>
+                                    <input required placeholder="Conatct No" type="text" id="contact">
+                                </div>
+                            </div>
+
+                            <div class="row2">
+                                <div class="one_2">
+                                    <label>
+                                        CNIC :
+                                    </label>
+                                    <input placeholder="CNIC" type="text" id="cnic">
+
+
+                                </div>
+                                <div class="one_2">
+                                    <label>
+                                        Picture :
+                                    </label>
+                                    <input class="file" type="file" id="pic">
+
+
+                                </div>
+                                <div class="row2"></div>
+                                <div class="one_2">
+                                    <label>
+                                        Course Name :
+                                    </label>
+                                    <select name="" id="courseName">
+                                        <option value="">Select batch</option>
+                                        <option value="webAndApp">Web & app</option>
+                                        <option value="seo">SEO</option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+                            <div class="row_2">
+                                <div class="one">
+                                    <button type="submit" id="SecondBtn">Registerٖ</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- ---------Add Student Class----- -->
+
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+            tabindex="0">
+            <div class="admin">
+                <form>
+                    <h1>Add Student Class</h1>
+
+                    <div class="mainDiv">
+                        <div class="row">
+                            <div class="one">
+                                <label>
+                                    Class Timming's :
+                                </label>
+                                <select name="" id="Class_Timing">
+                                    <option value="">Select Timming's</option>
+                                    <option value="1">9 To 11</option>
+                                    <option value="2">11 to 1</option>
+                                    <option value="3 ">2 to 4</option>
+
+
+
+                                </select>
+                            </div>
+                            <div class="one">
+                                <label>
+                                    Class Shedule's :
+                                </label>
+                                <select name="" id="Shedule">
+                                    <option value="">Select shedule's</option>
+                                    <option value="one">Shedule One</option>
+                                    <option value="two">Shedule One</option>
+                                    <option value="three inzimam">Shedule One</option>
+
+
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="one">
+                                <label>
+                                    Teacher's :
+                                </label>
+                                <select name="" id="teachers">
+                                    <option value="">Select Teacher's</option>
+                                    <option value="Sir ghouse">Sir ghouse</option>
+                                    <option value="sir haider">sir Haider</option>
+                                    <option value="sir inzimam">Sir Inzimam</option>
+
+
+
+                                </select>
+                            </div>
+                            <div class="one">
+                                <label>
+                                    Select Section :
+                                </label>
+                                <select name="" id="section">
+                                    <option value="">Select section</option>
+                                    <option value="A">A</option>
+                                    <option value="B">b</option>
+                                    <option value="C">C</option>
+
+
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="one">
+                                <label>
+                                    Select course :
+                                </label>
+                                <select name="" id="course">
+                                    <option value="">Select course</option>
+                                    <option value="1">Web & app</option>
+                                    <option value="2">SEO</option>
+                                    <option value="3">graphic design</option>
+
+
+
+                                </select>
+                            </div>
+
+
+                            <div class="one">
+                                <label>
+                                    Select batch :
+                                </label>
+                                <select name="" id="batch">
+                                    <option value="">Select batch</option>
+                                    <option value="Sylani batch 8 (Sir ghouse)">Sylani batch 8 (Sir
+                                        ghouse)</option>
+                                    <option value="Sylani batch 8 (Sir haider)">Sylani batch 8 (Sir
+                                        haider)</option>
+
+
+                                </select>
+                            </div>
+
+
+
+
+                            <div class="one">
+                                <button onclick="getClassValue()">Registerٖ</button>
+
+                            </div>
+
+                        </div>
+
+                </form>
+            </div>
+
+        </div>
+
+        <!-- mark attendence----- -->
+
+
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
+            tabindex="0">
+            <div class="admin2">
+                <form>
+                    <h1>Attendence Mark</h1>
+
+                    <div class="mainDiv">
+                        <div class="row">
+                            <div class="one">
+                                <label>
+                                    Roll Number:
+                                </label>
+                                <input required placeholder="Roll Number" type="number" id="roll_No">
+                            </div>
+                            <div class="one">
+                                <label>
+                                    Status :
+                                </label>
+                                <select name="" id="Status">
+                                    <option value="">Select Status</option>
+                                    <option value="Present">Present</option>
+                                    <option value="Absent">Absent</option>
+                                    <option value="leave">leave</option>
+
+
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+
+                <div class="row_2">
+                    <div class="one">
+                        <button type="submit" id="SecondBtn">Registerٖ</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
+            tabindex="0">
+
+            <table id="table">
+                <tr class="tableRow">
+                    <th>first Name</th>
+                    <th>Last Name</th>
+                    <th>father Name</th>
+                    <th>mobile Number</th>
+                    <th>CNIC No</th>
+                    <th>Date</th>
+                    <th>City</th>
+                    <th></th>
+
+
+
+                </tr>
+
+            </table>
+        </div>
+
+        <script type="module" src="dashboard.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>
